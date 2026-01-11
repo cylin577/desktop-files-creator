@@ -1,0 +1,9 @@
+[package]
+name = "desktop-files-creator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gtk = { package = "gtk4", version = "0.9", features = ["v4_6"] }
+libadwaita = { package = "libadwaita", version = "0.7", features = ["v1_1"] }
+glib = "0.20"

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Desktop Files Creator
+Comment=Create .desktop files easily
+Exec=desktop-files-creator
+Icon=com.github.cylin577.desktop-files-creator
+Terminal=false
+Categories=Development;Utility;GTK;
+StartupWMClass=com.github.cylin577.desktop-files-creator

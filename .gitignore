@@ -1,0 +1,13 @@
+# Meson
+build/
+
+# Rust
+target/
+Cargo.lock
+
+# Gemini CLI
+GEMINI.md
+
+# Temporary files
+*~
+*.swp
