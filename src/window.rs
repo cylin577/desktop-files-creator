@@ -55,6 +55,7 @@ mod imp {
         pub overlay: TemplateChild<libadwaita::ToastOverlay>,
 
         pub directory_path: RefCell<PathBuf>,
+        pub active_file_chooser: RefCell<Option<gtk::FileChooserNative>>,
     }
 
     #[glib::object_subclass]
@@ -213,8 +214,10 @@ impl DesktopFilesCreatorWindow {
                     }
                 }
             }
+            obj.imp().active_file_chooser.replace(None);
         }));
 
+        self.imp().active_file_chooser.replace(Some(file_chooser.clone()));
         file_chooser.show();
     }
 
@@ -376,8 +379,10 @@ impl DesktopFilesCreatorWindow {
                     }
                 }
             }
+            obj.imp().active_file_chooser.replace(None);
         }));
         
+        self.imp().active_file_chooser.replace(Some(file_chooser.clone()));
         file_chooser.show();
     }
 
@@ -407,8 +412,10 @@ impl DesktopFilesCreatorWindow {
                     }
                 }
             }
+            obj.imp().active_file_chooser.replace(None);
         }));
 
+        self.imp().active_file_chooser.replace(Some(file_chooser.clone()));
         file_chooser.show();
     }
 
